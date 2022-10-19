@@ -1,17 +1,22 @@
 package controller;
 
-import canovett.Telecamera;
+import telecamere.Telecamera;
 
 public class Controller{
     private Telecamera[] telecamere;
 
     public Controller(int size){
         telecamere = new Telecamera[size];
-        for(final Telecamera telecam : telecamere){
-            telecam = new Telecamera();
+        for(int i = 0; i < size; i++){
+            telecamere[i] = new Telecamera();
         }
     }
-    public void SwitchOn(int index){
-        telecamere[index].SwitchOn();
+    public void Choose(int index){
+        this.telecamere[index].SwitchOn();
+    }
+    public void ToString(){
+         for(final Telecamera telecam : telecamere){
+            System.out.print("| "+ telecam.IsSwitchedOn());
+        }
     }
 }
