@@ -1,7 +1,5 @@
 package controller;
 
-import controller.Controller;
-
 public class UseController{
     public static void main(String[] args) {
         Controller controller = new Controller(5);
@@ -10,5 +8,6 @@ public class UseController{
         controller.ToString();
         controller.Choose(1);
         controller.ToString();
+        System.out.println("MaDioca'");
     }
 }
