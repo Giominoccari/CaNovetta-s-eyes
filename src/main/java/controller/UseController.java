@@ -8,6 +8,5 @@ public class UseController{
         controller.ToString();
         controller.Choose(1);
         controller.ToString();
-        System.out.println("MaDioca'");
     }
 }
